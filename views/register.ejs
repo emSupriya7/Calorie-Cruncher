@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <style type="text/css">
+            body{
+                background-image: url("https://images.pexels.com/photos/4551971/pexels-photo-4551971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+                   height: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    /*text-align: center;*/
+                
+                
+                padding-top: 150px;
+                background-color: rgb(35, 41, 39);
+            }
+            .form-signup{
+                /*margin: auto;*/
+                height: 400px;
+                width: 400px;
+                /*max-width: 400px;*/
+                background-color: rgb(155, 205, 218);
+                padding: 35px;
+                border-radius: 12px;
+
+            }
+            .form-signup h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+            <form action="/signup" class="form-signup" method="get">
+                <h1>Sign Up</h1>
+                <h3>Create Your Account</h3>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" required  name="name" id="name" placeholder="Enter User name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control"  required name="email" id="email" placeholder="Enter Email id">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" required name="pwd" id="pwd" placeholder="Enter Password">
+                </div>
+                <input type="submit" class="btn btn-success btn-block" name="submit" value="submit">
+            </form>
+
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Calorie Cruncher</title>
+        <style>
+            .exam{
+                margin-left: 450px;
+                padding: 10px;
+                width: 400px;
+                background-color: rgb(126, 180, 128);
+                border-radius: 25px;
+                text-align: center;
+            }
+            body
+            {
+                background-image: url("https://www.shape.com/thmb/_qLsBEMKiMQn2a3TyHHXRI4_ZPo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/essential-nutrients-GettyImages-1042132108-91bde4a03ecc485d8ad712d20f3486af.jpg");
+                height: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="exam">
+            <h1 style="font-size: 20px;">Nutrients:</h1>
+                
+            <h3>Calories :<%= user[0] %></h3>
+            <h3>Sugars :<%= user[1] %></h3>
+            <h3>Carbohydrates :<%= user[2] %></h3>
+            <h3>Proteins :<%= user[3] %></h3>
+            
+        </div> -->
+        <div class="exam">
+            <h1 style="font-size: 20px;">Nutrients:</h1>
+          
+            <% for (let i = 0; i < user.length; i++) { %>
+              <div class="nutrient-item">
+                <h2>Item <%= i + 1 %>:</h2>
+                <h3>Calories: <%= user[i].calories %></h3>
+                <h3>Sugars: <%= user[i].sugar %></h3>
+                <h3>Fiber: <%= user[i].totalfiber %></h3>
+                <h3>Proteins: <%= user[i].protein %></h3>
+              </div>
+            <% } %>
+          </div>
+          
+        <!-- <button onclick="window.print()">Print</button> -->
+        
+    </body>
+
+</html>
